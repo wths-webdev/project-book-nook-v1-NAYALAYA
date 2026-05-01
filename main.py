@@ -21,9 +21,12 @@ print("\nMenu:\n"
  "Show inventory count (count)\n" 
  "Quit (q)\n")
 
-# Ask user what they wanna do
+# Ask user what they wanna do--Then, write conditional statements
 
 Demand = input("What would you like to do:")
+
+if Demand == "add":
+   = input("")
 
 # Ask for book
 
@@ -42,5 +45,3 @@ Demand = input("What would you like to do:")
 
 
 # Print out list
-
-
