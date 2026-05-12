@@ -1,8 +1,12 @@
 # List of books
 
-books = []
+Books = []
 
 # Print welcome message
+
+print("Welcome to your library.")
+
+# Print Menu
 
 print("\nWelcome to...\n"
     "      ______ ______\n"
@@ -12,36 +16,47 @@ print("\nWelcome to...\n"
     " //________.|.________\\\n"
     "`----------`-'----------'\n")
 
+print("Menu:\n" 
+"Add book (add)\n"
+"Remove book (remove)\n"
+"Show inventory count (count)\n"
+"Quit (q)")
 
-# Print Menu
-
-print("\nMenu:\n" 
- "Add book (add)\n"
- "Remove book (remove) \n"
- "Show inventory count (count)\n" 
- "Quit (q)\n")
-
-# Ask user what they wanna do--Then, write conditional statements
-
-Demand = input("What would you like to do:")
-
-if Demand == "add":
-   = input("")
+# Ask user what they wanna do
+while True:
+  
+    ask = input("What would you like to do?")
 
 # Ask for book
 
+    if ask == "add":
 
+        new_book = input("What book would you like to add?")
+        Books.append(new_book)
 
-# Add it to list
+        print(new_book, "has been added to your list.")
 
+    for b in Books:
+        print(b)
 
+    # Remove a book
 
-# Print success message
+    if ask == "remove":
+    
+        removal = input("What book would you like to remove?")
+        Books.remove(removal)
+      
+        print(removal, "has been removed from your list.")
+    
+        for b in Books:
+            print(b)
 
+        # Show number of books
 
+    if ask == "count":
+        print(len(Books))
+   
+        # Quit
 
-# if "show"
-
-
-
-# Print out list
+    if ask == "q":
+        break
